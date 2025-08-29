@@ -1,15 +1,17 @@
-import './styles/main.scss';
-import row from './assets/images/row.png';
+import "./styles/main.scss";
+import row from "./assets/images/row.png";
 
-const container :HTMLElement|nill = document.getElementById( elementid: 'image-container');
+const container = document.getElementById("image-container");
 
 if (container) {
-    const img :HTMLImageElement = document.createElement( tagName: 'img');
-    img.src = row;
-    img.alt = 'row example';
-    container.appendChild(img);
+  // Добавляем картинку
+  const img = document.createElement("img");
+  img.src = row;
+  img.alt = "row example";
+  container.appendChild(img);
 
-    const message :HTMLHeadingElement = document.createElement( tagName: 'h1');
-    message.textContent = 'Hello Webpack and TypeScript';
-    container.appendChild(message);
+  // Добавляем текст
+  const message = document.createElement("h1");
+  message.textContent = "Hello Webpack + TypeScript 🚀";
+  container.appendChild(message);
 }
