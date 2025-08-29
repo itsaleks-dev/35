@@ -1,0 +1,22 @@
+@use './fonts';
+@use './colors' as vars;
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: vars.$grey;
+    color: vars.$dark;
+}
+
+.header {
+    padding: 20px;
+    background: vars.$white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
